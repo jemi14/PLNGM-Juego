@@ -1,0 +1,5 @@
+Buscando al personaje
+
+	Es un videojuego en el que el usuario tendra que encontrar a un personaje u objeto en una imagen llena de ellos.
+	A medida que el usuario vaya encontrando el personaje la dificultad ira aumentando, en un mismo nivel se podra pedir mas de un personaje y objeto. 
+
