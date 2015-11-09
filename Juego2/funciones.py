@@ -3,7 +3,7 @@ import pygame
 from pygame.locals import *
 from math import sqrt
 
-from funciones import *
+
 
 
 
@@ -80,17 +80,20 @@ def CalcularDistancia(clickX, clickY, correctaX, correctaY):
 
 ########################################################################
 
-def SegunDistancia(d, nivel):  #Distancia, puntos y neuronas
-    if d <= 20:
+def SegunDistancia(d, vidas):  #Distancia, puntos y neuronas
+    respuesta = True
+    if d <= 40:
         pygame.mixer.init
-        pygame.mixer.music.load("ovacion.mp3")
+        pygame.mixer.music.load("Gano.wav")
         pygame.mixer.music.play()
-        nivel = nivel + 1
-    if d > 20:
-        pygame.mixer.music.load("abucheo.mp3")
+        vidas = vidas
+        respuesta = True
+    if d > 40:
+        pygame.mixer.music.load("You Lose.wav")
         pygame.mixer.music.play()
-        nivel = nivel
-    return nivel
+        vidas = vidas - 1
+        respuesta= False
+    return vidas, respuesta
 #########################################################################
 
 
@@ -106,15 +109,17 @@ def PonerMusicaRandom():
     import random
     pygame.mixer.init()
     a = []
-    a.append("parajuego0.mp3")
-    a.append("parajuego1.mp3")
-    a.append("parajuego2.mp3")
-    a.append("parajuego3.mp3")
-    a.append("parajuego4.mp3")
-    a.append("parajuego5.mp3")
-    a.append("parajuego6.mp3")
-    a.append("parajuego7.mp3")
-    a.append("parajuego8.mp3")
-    pygame.mixer.music.load(a[random.randrange(4)])
-    pygame.mixer.music.play(-1)
+    a.append("Audio 1.mp3")
+    a.append("Audio 2.mp3")
+    a.append("Audio 3.ogg")
+    a.append("Audio 4.ogg")
+    a.append("Audio 5.wav")
+    a.append("Audio 6.wav")
+    a.append("Audio 7.mp3")
+    a.append("Audio 8.ogg")
+    pygame.mixer.music.load(a[random.randrange(6)])
+    pygame.mixer.music.play(-2)
+
+
+
 
