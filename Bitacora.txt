@@ -1,0 +1,10 @@
+27/08/2015 Empezamos a hablar en Skype sobre las cosas que teniamos planeadas hacer. Elegimos un tema
+
+
+30(08/2015 Decidimos crear un juego basado en el popular juego "Buscando a Wally"
+
+02/09/2015 Creamos un Diagrama y un algoritmo para intentar planificar el juego que teniamos planeado
+
+
+08/09/2015 	Empezamos a buscar imagenes y a pensar como podriamos plasmar ese algoritmo en python. 
+
